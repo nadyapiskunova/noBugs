@@ -3,6 +3,7 @@ package lc_hw_practice_4;
 import java.util.Scanner;
 
 public class ForTask {
+    static Scanner scanner = new Scanner(System.in);
 
     public static void printNum3(){
         for (int i = 1; i <= 100; i++){
@@ -13,7 +14,6 @@ public class ForTask {
     }
 
     public static void printSum(){
-        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Введите число: ");
         int num = scanner.nextInt();
@@ -25,8 +25,7 @@ public class ForTask {
         System.out.println(sum);
     }
 
-    public static void printMultiplayTable(){
-        Scanner scanner = new Scanner(System.in);
+    public static void printMultiplicationTable(){
 
         System.out.print("Введите число: ");
         int num = scanner.nextInt();
@@ -36,14 +35,17 @@ public class ForTask {
         }
     }
 
-    public static void checkSimpleNum(){
-        Scanner scanner = new Scanner(System.in);
+    public static void checkPrimeNumber(){
 
         System.out.print("Введите число: ");
         int num = scanner.nextInt();
+        if (num < 2){
+            System.out.println("Число не является простым");
+            return;
+        }
 
         boolean isSimple = true;
-        for (int i = 2; i <= num-1; i++){
+        for (int i = 2; i <= Math.sqrt(num); i++){
             if (num % i == 0){
                 isSimple = false;
                 break;
@@ -51,7 +53,7 @@ public class ForTask {
         }
         if (isSimple){
             System.out.println("Число является простым");
-        } else {
+        } else{
             System.out.println("Число не является простым");
         }
     }
@@ -67,11 +69,11 @@ public class ForTask {
 
         //printSum();
 
-        //printMultiplayTable();
+        //printMultiplicationTable();
 
-        // checkSimpleNum();
-        // checkSimpleNum();
+        checkPrimeNumber();
+        checkPrimeNumber();
 
-        printNum10();
+        //printNum10();
     }
 }

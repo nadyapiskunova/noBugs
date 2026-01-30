@@ -3,15 +3,15 @@ package lc_hw_practice_4;
 import java.util.Scanner;
 
 public class WhileTask {
+    static Scanner scanner = new Scanner(System.in);
 
-    public static void printFactorialNum(){
-        Scanner scanner = new Scanner(System.in);
+    public static void printFactorialNum() {
 
         System.out.print("Введите число: ");
         int num = scanner.nextInt();
         int i = 1;
         int result = 1;
-        while (i <= num){
+        while (i <= num) {
             result = i * result;
             i++;
         }
@@ -19,29 +19,27 @@ public class WhileTask {
 
     }
 
-    public static void printEvenNum(){
-        Scanner scanner = new Scanner(System.in);
+    public static void printEvenNum() {
 
         System.out.print("Введите число: ");
         int num = scanner.nextInt();
         int i = 1;
 
-        while (i <= num){
-            if (i % 2 == 0){
+        while (i <= num) {
+            if (i % 2 == 0) {
                 System.out.println(i);
             }
             i++;
         }
     }
 
-    public static void printInvertNum(){
-        Scanner scanner = new Scanner(System.in);
+    public static void printInvertNum() {
 
         System.out.print("Введите число: ");
         int num = scanner.nextInt();
-        while (1 <= num){
+        while (1 <= num) {
             System.out.println(num);
-            num --;
+            num--;
         }
     }
 

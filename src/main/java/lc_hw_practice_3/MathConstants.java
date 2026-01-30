@@ -2,7 +2,7 @@ package lc_hw_practice_3;
 
 public class MathConstants {
     static final double PI = 3.14159;
-    final double E = 2.71828;
+    static final double E = 2.71828;
 
     static double calculateCircleArea(double r){
         return PI * Math.pow(r, 2);

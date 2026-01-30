@@ -13,7 +13,7 @@ public class GameSettings {
         maxPlayers = newMaxPlayers;
     }
     void addPlayer(){
-        if (currentPlayers > maxPlayers){
+        if (currentPlayers < maxPlayers){
             currentPlayers++;
         }
     }

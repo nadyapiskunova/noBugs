@@ -3,9 +3,9 @@ package lc_hw_practice_4;
 import java.util.Scanner;
 
 public class SwitchTask {
+    static Scanner scanner = new Scanner(System.in);
 
     public static void printDay(){
-        Scanner scanner = new Scanner(System.in);
         int day = scanner.nextInt();
 
         switch (day){
@@ -36,11 +36,9 @@ public class SwitchTask {
     }
 
     public  static void getPriceTicket(){
-        Scanner scanner = new Scanner(System.in);
+        int day = scanner.nextInt();
 
-        int price = scanner.nextInt();
-
-        switch (price){
+        switch (day){
             case 1:
             case 2:
             case 3:
@@ -59,7 +57,6 @@ public class SwitchTask {
     }
 
     public static void translateScore(){
-        Scanner scanner = new Scanner(System.in);
 
         int score = scanner.nextInt();
 
@@ -93,8 +90,6 @@ public class SwitchTask {
     }
 
     public static void printTextCommand(){
-        Scanner scanner = new Scanner(System.in);
-
         String command = scanner.nextLine();
 
         switch (command){
@@ -107,7 +102,6 @@ public class SwitchTask {
     }
 
     public static void calculateTwoNum(){
-        Scanner scanner = new Scanner(System.in);
         System.out.print("Введите число 1: ");
         int num1 = scanner.nextInt();
         scanner.nextLine();

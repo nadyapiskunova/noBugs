@@ -3,8 +3,9 @@ package lc_hw_practice_4;
 import java.util.Scanner;
 
 public class IfElseTask {
+    static Scanner scanner = new Scanner(System.in);
     public static void getSign(){
-        Scanner scanner = new Scanner(System.in);
+
         System.out.print("Введите число: ");
 
         int num = scanner.nextInt();
@@ -19,7 +20,7 @@ public class IfElseTask {
     }
 
     public static void getNumber(){
-        Scanner scanner = new Scanner(System.in);
+
         int num1 = scanner.nextInt();
         int num2 = scanner.nextInt();
 
@@ -33,7 +34,6 @@ public class IfElseTask {
     }
 
     public static void printScore(){
-        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Введите оценку: ");
         int score = scanner.nextInt();
@@ -48,8 +48,7 @@ public class IfElseTask {
         } else
             System.out.println("Такой оценки не существует");
     }
-    public static void checkNumIven(){
-        Scanner scanner = new Scanner(System.in);
+    public static void checkNumEven(){
 
         int num = scanner.nextInt();
 
@@ -90,8 +89,8 @@ public class IfElseTask {
         //getSign();
         //getNumber();
         //printScore();
-        //checkNumIven();
-        //checkNumIven();
+        //checkNumEven();
+        //checkNumEven();
         //checkSale(12);
         //checkSale(43);
         //checkSale(68);

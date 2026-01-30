@@ -3,9 +3,10 @@ package lc_hw_practice_4;
 import java.util.Scanner;
 
 public class DoWhileTask {
+    static Scanner scanner = new Scanner(System.in);
 
     public static void printPositiveNum(){
-        Scanner scanner = new Scanner(System.in);
+
         int num;
         do {
             System.out.print("Введите число: ");
@@ -14,7 +15,7 @@ public class DoWhileTask {
     }
 
     public static void checkPass(){
-        Scanner scanner = new Scanner(System.in);
+
         String pass;
 
         do {
@@ -32,7 +33,7 @@ public class DoWhileTask {
     }
 
     public static void printCommand(){
-        Scanner scanner = new Scanner(System.in);
+
         String command;
 
         do {
@@ -42,7 +43,6 @@ public class DoWhileTask {
     }
 
     public static void printCountNum(){
-        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Введите число: ");
         int num = scanner.nextInt();

@@ -3,9 +3,10 @@ package lc_hw_practice_4;
 import java.util.Scanner;
 
 public class BreakContinueTask {
+    static Scanner scanner = new Scanner(System.in);
 
     public static void printPositiveNumSum(){
-        Scanner scanner = new Scanner(System.in);
+
         int sum = 0;
         while (true){
             System.out.print("Введите число: ");
@@ -24,23 +25,24 @@ public class BreakContinueTask {
         for (int i = 1; i <= 20; i++){
             if (i % 3 == 0){
                 continue;
-            } else {
-                System.out.println(i);
             }
+                System.out.println(i);
         }
     }
 
     public static void printAllPositiveNum(){
-        Scanner scanner = new Scanner(System.in);
+
         while (true){
             System.out.print("Введите число: ");
             int num = scanner.nextInt();
+            if (num == 0) {
+                break;
+            }
             if (num <= 0){
                 continue;
             }
-            else {
-                System.out.println(num);
-            }
+            System.out.println(num);
+
         }
     }
 
