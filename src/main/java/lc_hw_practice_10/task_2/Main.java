@@ -1,4 +1,34 @@
 package lc_hw_practice_10.task_2;
 
 public class Main {
+    public static void main(String[] args) throws InterruptedException {
+        Thread t1 = new Thread(() ->{
+           try{
+               Thread.sleep(1000);
+           } catch (InterruptedException e){
+               throw new RuntimeException(e);
+           }
+           for (int i = 0; i < 5; i++){
+               System.out.println("A");
+           }
+        });
+
+        Thread t2 = new Thread(() -> {
+           try {
+               Thread.sleep(1000);
+           } catch (InterruptedException e){
+               throw new RuntimeException(e);
+           }
+           for (int i = 0; i < 5; i++){
+               System.out.println("B");
+           }
+        });
+
+        t1.start();
+        t2.start();
+
+        t1.join();
+        t2.join();
+
+    }
 }

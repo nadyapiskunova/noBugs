@@ -1,6 +1,6 @@
 package hw_practice_10.task_2;
 
-public class Task2 {
+public class TwoThreads {
 
     public static void main(String[] args) throws InterruptedException {
 
