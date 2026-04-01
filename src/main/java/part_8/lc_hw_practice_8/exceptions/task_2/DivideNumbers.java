@@ -12,7 +12,7 @@ public class DivideNumbers {
         try {
             divideNumbers(1, 0);
         } catch (ArithmeticException e){
-            System.out.println("Деление на ноль запрещено!");
+            System.out.println(e.getMessage());
         }
         finally {
             System.out.println("Операция завершена");

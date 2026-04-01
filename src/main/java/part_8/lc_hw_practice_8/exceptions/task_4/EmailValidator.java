@@ -1,6 +1,6 @@
 package part_8.lc_hw_practice_8.exceptions.task_4;
 
-import part_8.hw_practice_8.exceptions.task_4.exceptions.InvalidEmailExceptions;
+import part_8.lc_hw_practice_8.exceptions.task_4.exceptions.InvalidEmailExceptions;
 
 import java.util.regex.Pattern;
 
@@ -12,5 +12,6 @@ public class EmailValidator {
         if (email == null || !EMAIL_PATTERN.matcher(email).matches()){
             throw new InvalidEmailExceptions("Некорректный email: " + email);
         }
+        System.out.println("Email корректный: " + email);
     }
 }

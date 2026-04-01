@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Elements <T> implements Container <T> {
-    List<T> list = new ArrayList<>();
+    private List<T> list = new ArrayList<>();
     @Override
     public void add(T item){
         list.add(item);
@@ -14,6 +14,6 @@ public class Elements <T> implements Container <T> {
     public T get(){
         System.out.println("Последний элемент в списке: ");
 
-        return list.getLast();
+        return list.get(list.size() - 1);
     }
 }

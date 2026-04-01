@@ -16,7 +16,7 @@ public class Person {
         try {
             checkAgePerson(151);
         } catch (InvalidAgePersonException e){
-            System.out.println("Возраст пользователя не может быть меньше 0 или больше 150");
+            System.out.println(e.getMessage());
         } finally {
             System.out.println("Работа метода завершена");
         }
