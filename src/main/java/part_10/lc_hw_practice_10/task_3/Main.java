@@ -16,6 +16,7 @@ public class Main {
         Thread.sleep(2000);
 
         stop = true;
+        t1.join();
 
         System.out.println(count);
     }

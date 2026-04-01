@@ -1,22 +1,19 @@
 package part_10.lc_hw_practice_10.task_4;
 
 public class Count {
-    public static int count;
-
-    public static synchronized void increment(){
-        count++;
-    }
 
     public static void main(String[] args) throws InterruptedException{
+        Counter counter = new Counter();
+
         Thread t1 = new Thread(() ->{
            for (int i = 0; i < 1000; i++){
-               increment();
+               counter.increment();
            }
         });
 
         Thread t2 = new Thread(() -> {
             for (int i = 0; i < 1000; i++){
-                increment();
+                counter.increment();
             }
         });
 
@@ -26,7 +23,7 @@ public class Count {
         t1.join();
         t2.join();
 
-        System.out.println(count);
+        System.out.println(counter.getCount());
     }
 
 }

@@ -3,24 +3,24 @@ package part_10.lc_hw_practice_10.task_2;
 public class Main {
     public static void main(String[] args) throws InterruptedException {
         Thread t1 = new Thread(() ->{
-           try{
-               Thread.sleep(1000);
-           } catch (InterruptedException e){
-               throw new RuntimeException(e);
-           }
            for (int i = 0; i < 5; i++){
                System.out.println("A");
+               try{
+                   Thread.sleep(1000);
+               } catch (InterruptedException e){
+                   throw new RuntimeException(e);
+               }
            }
         });
 
         Thread t2 = new Thread(() -> {
-           try {
-               Thread.sleep(1000);
-           } catch (InterruptedException e){
-               throw new RuntimeException(e);
-           }
-           for (int i = 0; i < 5; i++){
+            for (int i = 0; i < 5; i++){
                System.out.println("B");
+               try {
+                   Thread.sleep(1000);
+               } catch (InterruptedException e){
+                   throw new RuntimeException(e);
+               }
            }
         });
 
