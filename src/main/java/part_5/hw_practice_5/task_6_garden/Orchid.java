@@ -1,0 +1,8 @@
+package part_5.hw_practice_5.task_6_garden;
+
+public class Orchid extends Plant{
+    @Override
+    public void needCare(){
+        System.out.println("Орхидее нужна высокая влажность и тень");
+    }
+}

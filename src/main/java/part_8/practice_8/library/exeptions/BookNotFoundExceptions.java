@@ -1,0 +1,8 @@
+package part_8.practice_8.library.exeptions;
+
+public class BookNotFoundExceptions extends Exception {
+    public BookNotFoundExceptions(String message){
+        super(message);;
+    }
+
+}
