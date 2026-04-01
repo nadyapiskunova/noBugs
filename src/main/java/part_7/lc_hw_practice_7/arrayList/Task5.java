@@ -9,8 +9,8 @@ public class Task5 {
     Random random = new Random();
 
     public void addSizeNumberList(int size){
-        for (int i = 1; i < size; i++){
-            numbers.add(random.nextInt(100));
+        for (int i = 0; i < size; i++){
+            numbers.add(random.nextInt(100)+1);
         }
     }
 
@@ -24,7 +24,7 @@ public class Task5 {
     }
 
     public void printMaxNumber(){
-        Integer maxNumber = numbers.getFirst();
+        Integer maxNumber = numbers.get(0);
 
          for (Integer number : numbers){
              if (maxNumber < number){

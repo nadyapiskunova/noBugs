@@ -1,6 +1,5 @@
 package part_7.lc_hw_practice_7.arrayList;
 
-import java.awt.color.ICC_ColorSpace;
 import java.util.ArrayList;
 
 public class Task3 {

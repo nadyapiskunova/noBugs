@@ -4,13 +4,14 @@ import java.util.LinkedHashMap;
 
 public class Task3 {
     private LinkedHashMap<Integer,String> views = new LinkedHashMap<Integer, String>();
+    private int counter = 1;
 
-    public void addView(Integer id, String page){
+    public void addView(String page){
         if(views.size() >= 10){
             int firstKey = views.keySet().iterator().next();
             views.remove(firstKey);
-            views.put(id, page);
-        } else views.put(id, page);
+            views.put(counter++, page);
+        } else views.put(counter++, page);
     }
 
     public void printViews(){

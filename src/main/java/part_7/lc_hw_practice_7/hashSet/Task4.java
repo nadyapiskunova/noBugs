@@ -11,16 +11,13 @@ public class Task4 {
         System.out.println("Для остановки ввода напишите \"Stop\"");
         while (true){
             System.out.print("Введите имя: ");
-            String name = scanner.nextLine();{
+            String name = scanner.nextLine();
                 if (name.equalsIgnoreCase("stop")){
                     break;
                 }
                 if (names.contains(name)){
                     System.out.println("Такое имя в списке есть, введите другое!");
                 }
-
-                names.add(name);
-            }
-        }
+                names.add(name);}
     }
 }

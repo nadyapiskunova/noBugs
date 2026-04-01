@@ -9,8 +9,8 @@ public class Task4 {
     Random random = new Random();
 
     public void addSizeForListNumbers(int size){
-        for(int i = 1; i < size; i++){
-            numbers.add(random.nextInt(100));
+        for(int i = 0; i < size; i++){
+            numbers.add(random.nextInt(100) +1);
         }
     }
 

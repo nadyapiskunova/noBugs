@@ -22,20 +22,20 @@ public class Main {
 
         Task3 task3 = new Task3();
 
-        task3.addView(1, "vk");
-        task3.addView(2, "facebook");
-        task3.addView(3, "wikipedia");
-        task3.addView(4, "ok");
-        task3.addView(5, "mail");
-        task3.addView(6, "lostark");
-        task3.addView(7, "nobugs");
-        task3.addView(8, "google");
-        task3.addView(9, "yandex");
-        task3.addView(10, "github");
-        task3.addView(11, "gitlab");
-        task3.addView(12, "instagram");
-        task3.addView(13, "mozila");
-        task3.addView(14, "miro");
+        task3.addView("vk");
+        task3.addView("facebook");
+        task3.addView("wikipedia");
+        task3.addView( "ok");
+        task3.addView("mail");
+        task3.addView( "lostark");
+        task3.addView("nobugs");
+        task3.addView( "google");
+        task3.addView( "yandex");
+        task3.addView( "github");
+        task3.addView( "gitlab");
+        task3.addView("instagram");
+        task3.addView( "mozila");
+        task3.addView( "miro");
 
         task3.printViews();
     }
